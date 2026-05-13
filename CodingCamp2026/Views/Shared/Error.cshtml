@@ -1,0 +1,21 @@
+@model ErrorViewModel
+@{
+    ViewData["Title"] = "Erreur";
+    Layout = "_Layout";
+}
+
+<div style="padding-top:120px;padding-bottom:80px">
+    <div class="wrap" style="text-align:center">
+        <p class="eyebrow" style="justify-content:center">Une erreur est survenue</p>
+        <h2 class="h2" style="margin-bottom:14px">Oups ! <em class="brand">Quelque chose s'est mal passé</em></h2>
+        <div class="divider" style="margin:20px auto"></div>
+        <p class="lead" style="max-width:520px;margin:0 auto 28px">Une erreur a été rencontrée pendant le traitement de votre requête. Veuillez réessayer ou retourner à l'accueil.</p>
+        @if (Model.ShowRequestId)
+        {
+            <p style="font-family:var(--fm);font-size:.7rem;color:var(--muted);margin-bottom:24px">
+                <strong>Request ID :</strong> <code>@Model.RequestId</code>
+            </p>
+        }
+        <a href="/" class="btn btn-primary btn-lg"><i class="fa fa-house"></i> Retour à l'accueil</a>
+    </div>
+</div>

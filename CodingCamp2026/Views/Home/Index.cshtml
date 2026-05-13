@@ -1,0 +1,1104 @@
+@{
+    ViewData["Title"] = "Coding Camp 2026 — 8ème Édition";
+}
+
+<div id="page-accueil" class="page active">
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="hero-left">
+                <div class="hero-kicker r"><span class="hkdot"></span> Du 2 au 14 août 2026 &nbsp;·&nbsp; Niger</div>
+                <h1 class="hero-title r d1">
+                    Coding<br>
+                    <span class="ita">Camp</span><br>
+                    <span class="ghost">2026</span>
+                </h1>
+                <div class="hero-badges r d2">
+                    <span class="hbadge">8ème Édition</span>
+                    <p>Super Crack Academy</p>
+                </div>
+                <p class="hero-desc r d2"><strong>Programmation, Robotique et IA</strong> pour 250 jeunes à Niamey, Dosso et Kiota.</p>
+                <div class="hero-locs r d3">
+                    <div class="hloc"><i class="fa fa-location-dot"></i> Kiota-Harikanassou</div>
+                    <div class="hloc"><i class="fa fa-location-dot"></i> Dosso</div>
+                    <div class="hloc"><i class="fa fa-location-dot"></i> Niamey</div>
+                </div>
+                <div class="hero-ctas r d3">
+                    <button class="btn btn-primary btn-lg" onclick="showPage('inscription')"><i class="fa fa-pen-to-square"></i> S'inscrire maintenant</button>
+                    <button class="btn btn-ghost-w btn-lg" onclick="showPage('programme')"><i class="fa fa-circle-play"></i> Voir le programme</button>
+                </div>
+                <div class="hcd r d4">
+                    <p class="hcd-lbl">⏳ Compte à rebours — ouverture du camp</p>
+                    <div class="hcd-row">
+                        <div class="hcd-unit"><span class="hcdn" id="cd-d">--</span><div class="hcdl">Jours</div></div>
+                        <span class="hcd-sep">:</span>
+                        <div class="hcd-unit"><span class="hcdn" id="cd-h">--</span><div class="hcdl">Heures</div></div>
+                        <span class="hcd-sep">:</span>
+                        <div class="hcd-unit"><span class="hcdn" id="cd-m">--</span><div class="hcdl">Mins</div></div>
+                        <span class="hcd-sep">:</span>
+                        <div class="hcd-unit"><span class="hcdn" id="cd-s">--</span><div class="hcdl">Secs</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div>
+                    <p class="hp-lbl" style="margin-bottom:12px">Tarifs de participation</p>
+                    <div class="tarifs-box">
+                        <div class="tb-row"><span class="tb-place">📍 Kiota-Harikanassou</span><span class="tb-price pfree">GRATUIT</span></div>
+                        <div class="tb-row"><span class="tb-place">📍 Dosso</span><span class="tb-price pyellow">5 000 FCFA</span></div>
+                        <div class="tb-row"><span class="tb-place">📍 Niamey</span><span class="tb-price porange">15 000 FCFA</span></div>
+                        <div class="tb-row"><span class="tb-place">Seniors 20 ans+</span><span class="tb-price pyellow">2 000 FCFA</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-sm sec-sand">
+        <div class="wrap">
+            <div style="text-align:center;max-width:680px;margin:0 auto 28px">
+                <p class="eyebrow r">Le Coding Camp</p>
+                <h2 class="h2 r d1">Ce que vous vivrez<br><em class="brand">en 2 semaines</em></h2>
+                <div class="divider r d1" style="margin:18px auto"></div>
+            </div>
+            <div class="acc-cards">
+                <div class="acc-card r d1" onclick="showPage('programme')">
+                    <span class="acc-ico">🐍</span>
+                    <div class="acc-title">Programmation</div>
+                    <p class="acc-body">Scratch et Python.</p>
+                    <div class="acc-more">Voir les formations <i class="fa fa-arrow-right"></i></div>
+                </div>
+                <div class="acc-card r d2" onclick="showPage('programme')">
+                    <span class="acc-ico">🤖</span>
+                    <div class="acc-title">Robotique &amp; IA</div>
+                    <p class="acc-body">Robots, drones et chatbots.</p>
+                    <div class="acc-more">Voir le programme <i class="fa fa-arrow-right"></i></div>
+                </div>
+                <div class="acc-card r d3" onclick="showPage('programme')">
+                    <span class="acc-ico">🏆</span>
+                    <div class="acc-title">Concours</div>
+                    <p class="acc-body">Concours numérique &amp; cérémonie du 15 août.</p>
+                    <div class="acc-more">Voir le calendrier <i class="fa fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-sm sec-dark sec-with-bg">
+        <div class="wrap">
+            <div class="two-col" style="align-items:center">
+                <div>
+                    <p class="eyebrow gold r">Qui sommes-nous</p>
+                    <h2 class="h2 r d1" style="color:var(--white)">Super Crack <em style="font-style:italic;color:#FFE3CB">Academy</em></h2>
+                    <div class="divider r d1"></div>
+                    <p class="r d2" style="color:rgba(255,255,255,.92);font-size:.95rem;line-height:1.75;margin-bottom:14px">« Super Crack Academy » est une <strong style="color:#fff">association à but non lucratif</strong> dont l'objectif est de mener des actions de sensibilisation à la culture numérique et d'initiation à la programmation informatique, afin de favoriser l'insertion professionnelle des jeunes.</p>
+                    <p class="r d3" style="color:rgba(255,255,255,.88);font-size:.92rem;line-height:1.75;margin-bottom:14px">L'Association intervient à <strong style="color:#fff">Niamey depuis 2016</strong> en organisant des ateliers d'initiation à la robotique (Coding Camp) et <strong style="color:#fff">depuis 2022 à Dosso</strong>. Notre ambition est de sensibiliser un maximum de jeunes à partir de 8 ans à s'intéresser aux outils numériques de manière responsable.</p>
+                    <p class="r d3" style="color:rgba(255,255,255,.85);font-size:.9rem;line-height:1.75">Nous souhaitons faire naître de nouvelles aspirations autour de la <strong style="color:#fff">Science et des Nouvelles Technologies</strong> via des ateliers pratiques basés sur les langages <strong style="color:#fff">Scratch, Python</strong> et la <strong style="color:#fff">robotique</strong>.</p>
+                    <div class="r d4" style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
+                        <button class="btn btn-white" onclick="showPage('apropos')"><i class="fa fa-arrow-right"></i> En savoir plus</button>
+                        <button class="btn btn-ghost-w" onclick="showPage('realisations')" style="color:#fff;border-color:rgba(255,255,255,.5)"><i class="fa fa-chart-bar"></i> Nos réalisations</button>
+                    </div>
+                </div>
+                <div class="r d2">
+                    <div class="stat-panel">
+                        <div class="sp-head"><p>Chiffres clés — 2016 à 2025</p></div>
+                        <div class="sp-row"><span class="sp-n"><span class="ctr" data-t="700">0</span><em>+</em></span><span class="sp-d">jeunes formés</span></div>
+                        <div class="sp-row"><span class="sp-n">~<span class="ctr" data-t="180">0</span></span><span class="sp-d">jeunes filles formées</span></div>
+                        <div class="sp-row"><span class="sp-n"><span class="ctr" data-t="1900">0</span></span><span class="sp-d">abonnés Facebook</span></div>
+                        <div class="sp-foot"><p>Éditions réalisées</p><strong>8</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-sm sec-sand">
+        <div class="wrap">
+            <div style="text-align:center;max-width:680px;margin:0 auto 24px">
+                <p class="eyebrow r">En images</p>
+                <h2 class="h2 r d1">Le camp <em class="brand">en action</em></h2>
+                <div class="divider r d1" style="margin:16px auto"></div>
+            </div>
+            <div class="illu-collage r d2">
+                <div class="illu illu-big">
+                    <img src="/Images/_DSC8949.JPG" alt="Atelier Coding Camp">
+                    <span class="ilbl">Atelier programmation</span>
+                </div>
+                <div class="illu">
+                    <img src="/Images/IMG_9173.jpg" alt="Participants en formation">
+                    <span class="ilbl">Niamey</span>
+                </div>
+                <div class="illu">
+                    <img src="/Images/IMG_9518.jpg" alt="Atelier robotique">
+                    <span class="ilbl">Robotique</span>
+                </div>
+                <div class="illu">
+                    <img src="/Images/IMG_9569.jpg" alt="Présentation">
+                    <span class="ilbl">Concours</span>
+                </div>
+                <div class="illu">
+                    <img src="/Images/IMG-20241223-WA0156.jpg" alt="Cérémonie">
+                    <span class="ilbl">Cérémonie</span>
+                </div>
+            </div>
+            <div class="r d3" style="text-align:center;margin-top:28px">
+                <button class="btn btn-outline" onclick="showPage('galerie')"><i class="fa fa-images"></i> Voir la galerie complète</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-sm">
+        <div class="wrap">
+            <div class="form-teaser r d1">
+                <div class="ft-left">
+                    <p class="eyebrow">Équipe pédagogique</p>
+                    <h3>Nos <em class="brand">formateurs 2026</em></h3>
+                    <p>15 formateurs et coaches confirmés pour vous accompagner. Découvrez leurs spécialités, parcours et réseaux sociaux.</p>
+                </div>
+                <div class="ft-right" style="display:flex;flex-direction:column;align-items:flex-end;gap:14px">
+                    <div class="ft-avatars">
+                        <span class="fta" style="background:linear-gradient(135deg,#C0510A,#E8661E)">OS</span>
+                        <span class="fta" style="background:linear-gradient(135deg,#7C3AED,#A855F7)">HM</span>
+                        <span class="fta" style="background:linear-gradient(135deg,#0D9488,#0891B2)">MA</span>
+                        <span class="fta" style="background:linear-gradient(135deg,#BE123C,#E11D48)">HS</span>
+                        <span class="fta fta-more">+11</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="showPage('formateurs')"><i class="fa fa-arrow-right"></i> Découvrir les formateurs</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-sm sec-sand" style="text-align:center">
+        <div class="wrap r">
+            <p class="eyebrow" style="justify-content:center">Places limitées — 250 jeunes attendus</p>
+            <h2 class="h2 d1" style="margin-bottom:16px">Inscrivez-vous dès maintenant !</h2>
+            <div class="d3" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:24px">
+                <button class="btn btn-primary btn-lg" onclick="showPage('inscription')"><i class="fab fa-whatsapp"></i> S'inscrire via WhatsApp</button>
+                <button class="btn btn-outline btn-lg" onclick="showPage('inscription')"><i class="fab fa-google"></i> Formulaire Google Form</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div id="page-apropos" class="page">
+
+    <div class="page-hero">
+        <div class="wrap">
+            <div class="breadcrumb"><span>Accueil</span><span class="bc-sep">/</span><b>À propos</b></div>
+            <h2 class="h2 r">Super Crack <em class="brand">Academy</em></h2>
+            <p class="lead r d1">Association à but non lucratif spécialisée dans la sensibilisation des jeunes à la culture numérique, à l'initiation à la programmation et à la robotique depuis 2016.</p>
+        </div>
+    </div>
+
+    <section class="sec">
+        <div class="wrap">
+            <div class="two-col">
+                <div>
+                    <p class="eyebrow r">Notre mission</p>
+                    <h2 class="h2 r d1">Qui sommes-<em class="brand">nous ?</em></h2>
+                    <div class="divider r d1"></div>
+                    <p class="text r d2">« Super Crack Academy » est une association à but non lucratif dont l'objectif est de mener des actions de sensibilisation à la culture numérique et d'initiation à la programmation informatique, afin de favoriser l'insertion professionnelle des jeunes.</p>
+                    <p class="text r d3" style="margin-top:14px">L'Association intervient à Niamey depuis 2016 en organisant des ateliers d'initiation à la robotique (Coding Camp) et depuis 2022 à Dosso. Notre ambition est de sensibiliser un maximum de jeunes à partir de 8 ans à s'intéresser aux outils numériques de manière responsable.</p>
+                    <p class="text r d3" style="margin-top:14px">Nous souhaitons faire naître de nouvelles aspirations autour de la Science et des Nouvelles Technologies via des ateliers pratiques basés sur les langages Scratch, Python et la robotique.</p>
+
+                    <div class="impact-list r d4">
+                        <div class="il-row"><div class="il-ico"><i class="fa fa-calendar"></i></div><div class="il-text"><strong>Actifs depuis 2016</strong><span>8 éditions du Coding Camp avec une croissance constante du nombre de participants</span></div></div>
+                        <div class="il-row"><div class="il-ico"><i class="fa fa-venus"></i></div><div class="il-text"><strong>~180 jeunes filles formées</strong><span>Engagement fort pour réduire le fossé de genre dans les métiers du numérique et des STEM</span></div></div>
+                        <div class="il-row"><div class="il-ico"><i class="fa fa-wheelchair"></i></div><div class="il-text"><strong>Inclusion des personnes handicapées</strong><span>Le Coding Camp est conçu pour accueillir les personnes en situation de handicap avec des aménagements spécifiques</span></div></div>
+                        <div class="il-row"><div class="il-ico"><i class="fa fa-building"></i></div><div class="il-text"><strong>8 visites d'entreprises organisées</strong><span>Airtel Niger, Zamani, Moov Africa, Ecobank, OLA Energy, Coris Bank, Assemblée Nationale, IRSH</span></div></div>
+                    </div>
+                </div>
+                <div class="r d2">
+                    <div class="stat-panel">
+                        <div class="sp-head"><p>Chiffres clés — 2016 à 2025</p></div>
+                        <div class="sp-row"><span class="sp-n"><span class="ctr" data-t="700">0</span><em>+</em></span><span class="sp-d">jeunes formés aux bases de la programmation et de la robotique</span></div>
+                        <div class="sp-row"><span class="sp-n">~<span class="ctr" data-t="180">0</span></span><span class="sp-d">dont environ 180 jeunes filles formées</span></div>
+                        <div class="sp-row"><span class="sp-n"><span class="ctr" data-t="1900">0</span></span><span class="sp-d">abonnés sur la page Facebook officielle</span></div>
+                        <div class="sp-row"><span class="sp-n"><span class="ctr" data-t="533">0</span></span><span class="sp-d">abonnés sur la chaîne YouTube</span></div>
+                        <div class="sp-foot"><p>Éditions réalisées</p><strong>8</strong></div>
+                    </div>
+                    <div class="visit-box">
+                        <p>Visites d'entreprises et institutions</p>
+                        <div class="visit-chips">
+                            <span class="vchip">Airtel Niger</span><span class="vchip">Zamani</span>
+                            <span class="vchip">Moov Africa</span><span class="vchip">Ecobank</span>
+                            <span class="vchip">OLA Energy</span><span class="vchip">Coris Bank</span>
+                            <span class="vchip">Assemblée Nationale</span><span class="vchip">IRSH</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec sec-sand">
+        <div class="wrap">
+            <p class="eyebrow r">Contenus pédagogiques</p>
+            <h2 class="h2 r d1">Les thèmes du <em class="brand">Coding Camp</em></h2>
+            <div class="divider r d1"></div>
+            <p class="lead r d2" style="max-width:640px">Chaque participant se voit attribuer un cursus adapté à son niveau et à sa tranche d'âge. Les formations couvrent 9 modules complémentaires.</p>
+            <div class="themes-grid">
+                <div class="theme-card r d1"><span class="tc-ico">🐱</span><div class="tc-title">Scratch</div><p class="tc-body">Programmation par blocs visuels. Création de jeux, animations et chatbot IA avec LLM local (Ollama).</p><span class="tc-age">8 – 13/14 ans</span></div>
+                <div class="theme-card r d2"><span class="tc-ico">🐍</span><div class="tc-title">Python &amp; Robotique</div><p class="tc-body">Programmation de la carte BBC micro:bit et du kit Freenove avec Python. Du code au robot physique.</p><span class="tc-age">13 – 18 ans</span></div>
+                <div class="theme-card r d3"><span class="tc-ico">📱</span><div class="tc-title">MIT App Inventor</div><p class="tc-body">Création d'applications Android avec chatbot IA intégré fonctionnant sans connexion internet.</p><span class="tc-age">13 – 18 ans</span></div>
+                <div class="theme-card r d1"><span class="tc-ico">🧠</span><div class="tc-title">Chatbot IA &amp; LLM</div><p class="tc-body">Développement d'agents conversationnels avec des modèles LLM légers (Tinyllama, phi-2, Ollama).</p><span class="tc-age">Seniors · 16+ ans</span></div>
+                <div class="theme-card r d2"><span class="tc-ico">🚁</span><div class="tc-title">Pilotage de drones</div><p class="tc-body">Initiation au pilotage et à la programmation de drones civils avec Niger FPV Drone.</p><span class="tc-age">Tous niveaux</span></div>
+                <div class="theme-card r d3"><span class="tc-ico">💼</span><div class="tc-title">Entrepreneuriat &amp; Art oratoire</div><p class="tc-body">Pitch, présentation de projets, développement de l'esprit startup et concours d'art oratoire sur l'IA.</p><span class="tc-age">Tous niveaux</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec">
+        <div class="wrap">
+            <div class="two-col">
+                <div>
+                    <p class="eyebrow r">Notre parcours</p>
+                    <h2 class="h2 r d1">8 éditions,<br><em class="brand">une seule mission</em></h2>
+                    <div class="divider r d1"></div>
+                    <p class="text r d2">Depuis le lancement en 2016 avec une première édition à Niamey, Super Crack Academy a régulièrement élargi son impact — en termes de participants, de villes couvertes et de modules proposés.</p>
+                    <div class="r d3" style="margin-top:28px">
+                        <button class="btn btn-primary" onclick="showPage('realisations')"><i class="fa fa-chart-bar"></i> Voir toutes les réalisations</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="timeline">
+                        <div class="tl-entry r d1"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2016 — 1ère édition</div><div class="tl-title">Lancement à Niamey</div><p class="tl-body">Première édition du Coding Camp à Niamey. Initiation à Scratch et introduction à la robotique pour les jeunes nigériens.</p></div></div>
+                        <div class="tl-entry r d2"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2018 — 3ème édition</div><div class="tl-title">Introduction de Python</div><p class="tl-body">Intégration de Python au programme pour les adolescents. Premier atelier robotique BBC micro:bit.</p></div></div>
+                        <div class="tl-entry r d3"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2022 — Extension à Dosso</div><div class="tl-title">Expansion régionale</div><p class="tl-body">Ouverture d'une session à Dosso. Le camp touche désormais deux villes avec plus de 100 participants.</p></div></div>
+                        <div class="tl-entry r d4"><div class="tl-dot"></div><div class="tl-card"><div class="tl-year">2024 — 7ème édition</div><div class="tl-title">IA &amp; Drones intégrés</div><p class="tl-body">Introduction des ateliers IA, chatbot et pilotage de drones. Kiota-Harikanassou rejoint l'édition avec une session gratuite.</p></div></div>
+                        <div class="tl-entry r d5"><div class="tl-dot" style="background:var(--or);border-color:var(--or)"></div><div class="tl-card" style="border-left:3px solid var(--or)"><div class="tl-year">2026 — 8ème édition</div><div class="tl-title">Objectif 250 participants 🎯</div><p class="tl-body">Programme le plus ambitieux à ce jour — 9 modules, 3 villes, 15 formateurs, concours numérique national et cérémonie du 15 août.</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div id="page-formateurs" class="page">
+
+    <div class="page-hero">
+        <div class="wrap">
+            <div class="breadcrumb"><span>Accueil</span><span class="bc-sep">/</span><b>Formateurs</b></div>
+            <h2 class="h2 r" style="color:var(--white)">Notre équipe de <em class="brand">formateurs</em></h2>
+            <p class="lead r d1" style="color:rgba(255,255,255,.46);max-width:600px">Des experts passionnés, formés à l'enseignement des technologies numériques, robotique et intelligence artificielle. Décourez les compétences et l'expertise de notre équipe.</p>
+        </div>
+    </div>
+
+    <section class="sec">
+        <div class="wrap">
+            <p class="eyebrow r">Équipe pédagogique</p>
+            <h2 class="h2 r d1">15 formateurs <em class="brand">qualifiés</em></h2>
+            <div class="divider r d1"></div>
+            <p class="text r d2" style="max-width:640px;margin-bottom:48px">Nos formateurs sont des spécialistes dans leur domaine, avec une expérience confirmée en enseignement des technologies numériques et une vraie passion pour l'apprentissage des jeunes.</p>
+
+            <div class="formateurs-grid">
+                <!-- Formateurs fictifs pour la démonstration -->
+                <div class="formateur-card r d1">
+                    <div class="formateur-photo">
+                        <img src="/images/IMG_9173.jpg" alt="Formateur" onerror="this.style.display='none'">
+                        <span style="font-size:4rem" class="placeholder">👨‍🏫</span>
+                    </div>
+                    <div class="formateur-info">
+                        <div class="formateur-name">Ibrahim Ali</div>
+                        <span class="formateur-specialite">Scratch &amp; Programmation</span>
+                        <div class="formateur-socials">
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formateur-card r d2">
+                    <div class="formateur-photo">
+                        <img src="/images/IMG_9225.jpg" alt="Formateur" onerror="this.style.display='none'">
+                        <span style="font-size:4rem" class="placeholder">👩‍🏫</span>
+                    </div>
+                    <div class="formateur-info">
+                        <div class="formateur-name">Fatima Sée</div>
+                        <span class="formateur-specialite">Python &amp; Robotique</span>
+                        <div class="formateur-socials">
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formateur-card r d3">
+                    <div class="formateur-photo">
+                        <img src="/images/IMG_9518.jpg" alt="Formateur" onerror="this.style.display='none'">
+                        <span style="font-size:4rem" class="placeholder">👨‍💻</span>
+                    </div>
+                    <div class="formateur-info">
+                        <div class="formateur-name">Moussa Diallo</div>
+                        <span class="formateur-specialite">MIT App Inventor</span>
+                        <div class="formateur-socials">
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formateur-card r d4">
+                    <div class="formateur-photo">
+                        <img src="/images/IMG_9520.jpg" alt="Formateur" onerror="this.style.display='none'">
+                        <span style="font-size:4rem" class="placeholder">🤖</span>
+                    </div>
+                    <div class="formateur-info">
+                        <div class="formateur-name">Aïssata Bouba</div>
+                        <span class="formateur-specialite">Chatbot IA</span>
+                        <div class="formateur-socials">
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formateur-card r d1">
+                    <div class="formateur-photo">
+                        <img src="/images/IMG_9569.jpg" alt="Formateur" onerror="this.style.display='none'">
+                        <span style="font-size:4rem" class="placeholder">🚁</span>
+                    </div>
+                    <div class="formateur-info">
+                        <div class="formateur-name">Abdou Sader</div>
+                        <span class="formateur-specialite">Pilotage Drones</span>
+                        <div class="formateur-socials">
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formateur-card r d2">
+                    <div class="formateur-photo">
+                        <img src="/images/IMG_9588.jpg" alt="Formateur" onerror="this.style.display='none'">
+                        <span style="font-size:4rem" class="placeholder">🎤</span>
+                    </div>
+                    <div class="formateur-info">
+                        <div class="formateur-name">Zahra Hassan</div>
+                        <span class="formateur-specialite">Art Oratoire &amp; Communication</span>
+                        <div class="formateur-socials">
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="formateur-social-btn"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top:48px;text-align:center">
+                <p class="text" style="color:var(--muted)">Plus de détails sur l'équipe complète et les domaines de spécialisation disponibles lors de l'inscription.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec sec-sand">
+        <div class="wrap">
+            <p class="eyebrow r">Visites d'entreprises</p>
+            <h2 class="h2 r d1">Partenaires <em class="brand">professionnels</em></h2>
+            <div class="divider r d1"></div>
+            <p class="text r d2" style="max-width:640px;margin-bottom:24px">Durant le Coding Camp, les participants découvrent le monde professionnel à travers des visites d'entreprises partenaires leaders au Niger.</p>
+
+            <div class="companies-marquee r d3">
+                <div class="companies-track">
+                    <div class="company-logo"><img src="/Images/ecobank-4.jpg" alt="Ecobank"></div>
+                    <div class="company-logo"><img src="/Images/moov_visite.jpg" alt="Moov Africa"></div>
+                    <div class="company-logo"><img src="/Images/visite_airtel.jpg" alt="Airtel Niger"></div>
+                    <div class="company-logo">OLA Energy</div>
+                    <div class="company-logo">Coris Bank</div>
+                    <div class="company-logo">Zamani Niger</div>
+                    <div class="company-logo">Assemblée Nationale</div>
+                    <div class="company-logo">IRSH Niger</div>
+                    <!-- duplicate set for seamless looping -->
+                    <div class="company-logo" aria-hidden="true"><img src="/Images/ecobank-4.jpg" alt=""></div>
+                    <div class="company-logo" aria-hidden="true"><img src="/Images/moov_visite.jpg" alt=""></div>
+                    <div class="company-logo" aria-hidden="true"><img src="/Images/visite_airtel.jpg" alt=""></div>
+                    <div class="company-logo" aria-hidden="true">OLA Energy</div>
+                    <div class="company-logo" aria-hidden="true">Coris Bank</div>
+                    <div class="company-logo" aria-hidden="true">Zamani Niger</div>
+                    <div class="company-logo" aria-hidden="true">Assemblée Nationale</div>
+                    <div class="company-logo" aria-hidden="true">IRSH Niger</div>
+                </div>
+            </div>
+
+            <p class="text r d4" style="color:var(--muted);font-size:.85rem;margin-top:20px;text-align:center">Liste défilante des entreprises partenaires · Nous continuons à ajouter des partenaires tout au long de l'année.</p>
+        </div>
+    </section>
+</div>
+
+
+<div id="page-programme" class="page">
+
+    <div class="page-hero">
+        <div class="wrap">
+            <div class="breadcrumb"><span>Accueil</span><span class="bc-sep">/</span><b>Programme</b></div>
+            <h2 class="h2 r" style="color:var(--white)">Programme <em class="brand">&amp; Formations</em></h2>
+            <p class="lead r d1" style="color:rgba(255,255,255,.46);max-width:600px">Deux semaines d'activités réparties dans trois villes. Un programme adapté à chaque tranche d'âge, du 2 au 14 août 2026.</p>
+        </div>
+    </div>
+
+    <div class="ptabs-bar">
+        <div class="ptabs-inner">
+            <button class="ptab active" onclick="switchPtab(this,'pt-calendrier')">📅 Calendrier</button>
+            <button class="ptab" onclick="switchPtab(this,'pt-formations')">📚 Formations par âge</button>
+            <button class="ptab" onclick="switchPtab(this,'pt-formateurs')">👥 Formateurs</button>
+            <button class="ptab" onclick="switchPtab(this,'pt-concours')">🏆 Concours</button>
+        </div>
+    </div>
+
+    <div id="pt-calendrier" class="prog-content active">
+        <section class="sec">
+            <div class="wrap">
+                <p class="eyebrow r">Calendrier prévisionnel</p>
+                <h2 class="h2 r d1">Déroulé du <em class="brand">camp</em></h2>
+                <div class="divider r d1"></div>
+                <p style="font-size:.84rem;color:var(--muted);font-style:italic;margin-bottom:48px;max-width:600px" class="r d2">Note : Les dates sont susceptibles de modifications. Le programme détaillé sera précisé ultérieurement.</p>
+
+                <div class="sched-grid">
+                    <div class="sched-block r d1">
+                        <div class="sched-head">
+                            <div class="sh-left"><p>2 – 4 Août 2026</p><strong>📍 Kiota-Harikanassou</strong></div>
+                            <span class="tag tg-green">GRATUIT</span>
+                        </div>
+                        <div class="day-row"><div class="dr-day"><span class="dd">Dim</span><span class="dn">2</span></div><div class="dr-act"><div class="at">Ouverture officielle</div><div class="ad">Accueil des participants, présentation du programme</div></div></div>
+                        <div class="day-row"><div class="dr-day"><span class="dd">Lun</span><span class="dn">3</span></div><div class="dr-act"><div class="at">Scratch &amp; Blocs de code</div><div class="ad">Initiation à la programmation graphique et aux jeux</div></div></div>
+                        <div class="day-row"><div class="dr-day"><span class="dd">Mar</span><span class="dn">4</span></div><div class="dr-act"><div class="at">Robotique BBC micro:bit</div><div class="ad">MakeCode + kits Freenove — programmation de robots</div></div></div>
+                    </div>
+
+                    <div class="sched-block r d2">
+                        <div class="sched-head">
+                            <div class="sh-left"><p>5 – 7 Août 2026</p><strong>📍 Dosso</strong></div>
+                            <span class="tag tg-gold">5 000 FCFA</span>
+                        </div>
+                        <div class="day-row"><div class="dr-day"><span class="dd">Mer</span><span class="dn">5</span></div><div class="dr-act"><div class="at">Python &amp; micro:bit</div><div class="ad">Programmation Python, kit robotique Freenove</div></div></div>
+                        <div class="day-row"><div class="dr-day"><span class="dd">Jeu</span><span class="dn">6</span></div><div class="dr-act"><div class="at">MIT App Inventor</div><div class="ad">Création d'application Android avec chatbot IA local</div></div></div>
+                        <div class="day-row"><div class="dr-day"><span class="dd">Ven</span><span class="dn">7</span></div><div class="dr-act"><div class="at">Art oratoire · Anglais numérique</div><div class="ad">Coaching communication + vocabulaire tech en anglais</div></div></div>
+                    </div>
+
+                    <div class="sched-block r d3">
+                        <div class="sched-head">
+                            <div class="sh-left"><p>10 – 12 Août 2026</p><strong>📍 Niamey</strong></div>
+                            <span class="tag tg-or">15 000 FCFA</span>
+                        </div>
+                        <div class="day-row"><div class="dr-day"><span class="dd">Lun</span><span class="dn">10</span></div><div class="dr-act"><div class="at">Chatbot IA avancé (LLM)</div><div class="ad">Ollama, Tinyllama, phi-2 — sans connexion internet</div></div></div>
+                        <div class="day-row"><div class="dr-day"><span class="dd">Mar</span><span class="dn">11</span></div><div class="dr-act"><div class="at">Entrepreneuriat &amp; Drones</div><div class="ad">Pitch startup + initiation pilotage drones (Niger FPV)</div></div></div>
+                        <div class="day-row"><div class="dr-day"><span class="dd">Mer</span><span class="dn">12</span></div><div class="dr-act"><div class="at">Session Seniors (20 ans+)</div><div class="ad">Formation demi-journée chatbot IA — 2 000 FCFA</div></div></div>
+                    </div>
+
+                    <div class="sched-block r d4" style="border-left:3px solid var(--or)">
+                        <div class="sched-head">
+                            <div class="sh-left"><p>13 – 14 Août 2026</p><strong>🏆 Niamey — Finale</strong></div>
+                            <span class="tag tg-or">Clôture</span>
+                        </div>
+                        <div class="day-row"><div class="dr-day"><span class="dd">Jeu</span><span class="dn">13</span></div><div class="dr-act"><div class="at">Concours numérique national</div><div class="ad">Scratch · App Mobile · Art oratoire IA — devant jury</div></div></div>
+                        <div class="day-row"><div class="dr-day"><span class="dd">Ven</span><span class="dn">14</span></div><div class="dr-act"><div class="at">Remise des prix &amp; Cérémonie</div><div class="ad">Trophées, certificats, clôture officielle — 15 août fête nationale</div></div></div>
+                    </div>
+
+                    <div class="sched-special r">
+                        <div class="ss-head">
+                            <span class="ss-badge">Dimanche 9 Août</span>
+                            <span class="ss-title">🎉 Journée récréative &amp; Team-building — Espace Zen (Kanazi)</span>
+                            <span class="ss-sub">Tous les participants · Transport en bus inclus</span>
+                        </div>
+                        <div class="ss-body">Une journée de détente et de cohésion entre tous les participants venus des trois villes. Activités ludiques, culturelles et sportives. Le transport en bus est inclus dans les frais de participation.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="pt-formations" class="prog-content">
+        <section class="sec">
+            <div class="wrap">
+                <p class="eyebrow r">Modules pédagogiques</p>
+                <h2 class="h2 r d1">Formations par <em class="brand">tranche d'âge</em></h2>
+                <div class="divider r d1"></div>
+                <div class="ftabs r d2">
+                    <button class="ftab active" onclick="switchFtab(this,'ft1')">8 – 13/14 ans</button>
+                    <button class="ftab" onclick="switchFtab(this,'ft2')">13/14 – 18 ans</button>
+                    <button class="ftab" onclick="switchFtab(this,'ft3')">Seniors 20 ans+</button>
+                    <button class="ftab" onclick="switchFtab(this,'ft4')">Tous niveaux</button>
+                </div>
+                <div id="ft1" class="ftab-content active">
+                    <div class="fgrid">
+                        <div class="fitem"><span class="fi-ico">🐱</span><div class="fi-title">Scratch — Programmation par blocs</div><p class="fi-desc">Langage de programmation graphique à vocation éducative. Les apprenants créent des jeux vidéo et développent un chatbot IA communiquant avec un LLM local (Ollama) sans connexion internet.</p><span class="fi-age">8 – 13/14 ans · Débutants</span></div>
+                        <div class="fitem"><span class="fi-ico">🤖</span><div class="fi-title">MakeCode &amp; BBC micro:bit</div><p class="fi-desc">Initiation à la robotique avec le logiciel MakeCode et la carte BBC micro:bit. Programmation ludique d'un robot avec les kits Freenove. Premiers pas dans le hardware.</p><span class="fi-age">8 – 13/14 ans</span></div>
+                        <div class="fitem"><span class="fi-ico">🧠</span><div class="fi-title">Initiation au Chatbot IA</div><p class="fi-desc">Découverte des LLM (Large Language Models) — modèles capables de comprendre et générer du texte. Création d'un chatbot fonctionnel sans connexion internet grâce à Ollama.</p><span class="fi-age">8 – 13/14 ans</span></div>
+                    </div>
+                </div>
+                <div id="ft2" class="ftab-content">
+                    <div class="fgrid">
+                        <div class="fitem"><span class="fi-ico">🐍</span><div class="fi-title">Python &amp; BBC micro:bit</div><p class="fi-desc">Programmation de la carte BBC micro:bit avec Python puis du kit robotique Freenove. Du langage au robot physique, une progression complète.</p><span class="fi-age">13 – 18 ans</span></div>
+                        <div class="fitem"><span class="fi-ico">📱</span><div class="fi-title">MIT App Inventor</div><p class="fi-desc">Création d'applications mobiles Android. Objectif : développer un chatbot IA avec un LLM léger (Tinyllama, phi-2) fonctionnant sans connexion internet.</p><span class="fi-age">13 – 18 ans</span></div>
+                        <div class="fitem"><span class="fi-ico">💼</span><div class="fi-title">Entrepreneuriat &amp; Pitch</div><p class="fi-desc">Coachings en entrepreneuriat, création de startup et pitch. Développer l'esprit entrepreneur et présenter un projet numérique devant jury.</p><span class="fi-age">13 – 18 ans</span></div>
+                    </div>
+                </div>
+                <div id="ft3" class="ftab-content">
+                    <div class="fgrid">
+                        <div class="fitem"><span class="fi-ico">🧠</span><div class="fi-title">Développement Chatbot IA</div><p class="fi-desc">Formation d'une demi-journée dédiée au développement d'un chatbot IA. Créer et déployer un agent conversationnel intelligent avec des LLM locaux.</p><span class="fi-age">20 ans et plus · 2 000 FCFA</span></div>
+                        <div class="fitem"><span class="fi-ico">💡</span><div class="fi-title">LLM &amp; IA Générative</div><p class="fi-desc">Comprendre les modèles de langage, leur fonctionnement et leur utilisation responsable dans les contextes professionnels et personnels.</p><span class="fi-age">20 ans et plus</span></div>
+                    </div>
+                </div>
+                <div id="ft4" class="ftab-content">
+                    <div class="fgrid">
+                        <div class="fitem"><span class="fi-ico">🎤</span><div class="fi-title">Art Oratoire</div><p class="fi-desc">Coaching en prise de parole en public. Confiance, clarté, conviction. Préparation au concours d'art oratoire sur le thème de l'IA.</p><span class="fi-age">Tous niveaux</span></div>
+                        <div class="fitem"><span class="fi-ico">🇬🇧</span><div class="fi-title">Anglais &amp; Numérique</div><p class="fi-desc">Vocabulaire technique en anglais indispensable pour accéder aux ressources mondiales du numérique. Communication dans l'univers tech.</p><span class="fi-age">Tous niveaux</span></div>
+                        <div class="fitem"><span class="fi-ico">🚁</span><div class="fi-title">Pilotage de Drones</div><p class="fi-desc">Séance d'initiation au pilotage et à la programmation de drones civils avec Niger FPV Drone. L'activité la plus attendue de chaque édition.</p><span class="fi-age">Tous niveaux</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="pt-formateurs" class="prog-content">
+        <section class="sec">
+            <div class="wrap">
+                <p class="eyebrow r">Équipe pédagogique</p>
+                <h2 class="h2 r d1">Nos <em class="brand">formateurs 2026</em></h2>
+                <div class="divider r d1"></div>
+                <p class="lead r d2" style="max-width:620px;margin-bottom:48px">15 formateurs et coaches confirmés, répartis sur les trois sites. Des passionnés du numérique qui donnent de leur temps pour la jeunesse nigérienne.</p>
+                <div class="formateurs-grid r d2">
+                    <div class="form-card"><div class="form-avatar" style="background:linear-gradient(135deg,#C0510A,#E8661E)">OS</div><div class="form-body"><div class="form-name">Omar Sidikou</div><div class="form-role">Resp. projet</div><div class="form-loc">Formateur IT · Niamey / Kiota / Dosso</div></div></div>
+                    <div class="form-card"><div class="form-avatar" style="background:linear-gradient(135deg,#7C3AED,#A855F7)">HM</div><div class="form-body"><div class="form-name">Hadiza Moussa</div><div class="form-role">Formatrice IT</div><div class="form-loc">Coach Anglais · Niamey / Dosso</div></div></div>
+                    <div class="form-card"><div class="form-avatar" style="background:linear-gradient(135deg,#0D9488,#0891B2)">MA</div><div class="form-body"><div class="form-name">Mamane Aminou</div><div class="form-role">Formateur IT</div><div class="form-loc">Niamey</div></div></div>
+                    <div class="form-card"><div class="form-avatar" style="background:linear-gradient(135deg,#B45309,#D97706)">IB</div><div class="form-body"><div class="form-name">Ismaël Bague</div><div class="form-role">Formateur IT</div><div class="form-loc">Niamey</div></div></div>
+                    <div class="form-card"><div class="form-avatar" style="background:linear-gradient(135deg,#BE123C,#E11D48)">HS</div><div class="form-body"><div class="form-name">Hamsatou Soumana</div><div class="form-role">Formatrice IT</div><div class="form-loc">Niamey</div></div></div>
+                    <div class="form-card"><div class="form-avatar" style="background:linear-gradient(135deg,#0369A1,#0284C7)">SI</div><div class="form-body"><div class="form-name">Soraya Ibrahim</div><div class="form-role">Formatrice IT</div><div class="form-loc">Niamey</div></div></div>
+                    <div class="form-card"><div class="form-avatar" style="background:linear-gradient(135deg,#15803D,#16A34A)">FM</div><div class="form-body"><div class="form-name">Falmata Moussa</div><div class="form-role">Formatrice IT</div><div class="form-loc">Niamey</div></div></div>
+                    <div class="form-card"><div class="form-avatar" style="background:linear-gradient(135deg,#9D174D,#BE185D)">SA</div><div class="form-body"><div class="form-name">Samira Amadou</div><div class="form-role">Art Oratoire</div><div class="form-loc">Niamey</div></div></div>
+                    <div class="form-card"><div class="form-avatar" style="background:linear-gradient(135deg,#92400E,#B45309)">SD</div><div class="form-body"><div class="form-name">Salma Doumbia</div><div class="form-role">Art Oratoire</div><div class="form-loc">Niamey</div></div></div>
+                    <div class="form-card"><div class="form-avatar" style="background:linear-gradient(135deg,#1E3A8A,#1D4ED8)">ME</div><div class="form-body"><div class="form-name">Mounkaïla Elhebib</div><div class="form-role">Formateur IT</div><div class="form-loc">Niamey</div></div></div>
+                </div>
+                <p style="text-align:center;font-size:.76rem;color:var(--muted);margin-top:20px;font-family:var(--fm);letter-spacing:.04em" class="r">+ Abdoul Majid A.Y. · Yasmina Amadou · Aminou Insa Hassane · Rahina Soukeredjo · Hapsatou Moussa Guele-Guele</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="pt-concours" class="prog-content">
+        <section class="sec sec-dark">
+            <div class="wrap">
+                <p class="eyebrow gold r">Compétition finale</p>
+                <h2 class="h2 r d1" style="color:var(--white)">Le Concours <em style="font-style:italic;color:#F5A623">Numérique</em></h2>
+                <div class="divider r d1"></div>
+                <p class="lead r d2" style="color:rgba(255,255,255,.44);max-width:600px">À l'issue des formations, les participants se retrouvent à Niamey les 13 et 14 août pour un concours numérique basé sur les apprentissages du camp.</p>
+                <div class="concours-grid r d3">
+                    <div class="conc-card">
+                        <div class="cg-bar"></div>
+                        <div class="conc-num">01</div>
+                        <div class="conc-title">Concours Scratch</div>
+                        <p class="conc-desc">Créez le jeu ou l'animation Scratch le plus créatif et fonctionnel. Évaluation sur la logique de programmation, la créativité et l'originalité.</p>
+                        <div class="conc-foot"><i class="fa fa-trophy"></i> Trophée Meilleur Projet Scratch</div>
+                    </div>
+                    <div class="conc-card">
+                        <div class="cg-bar"></div>
+                        <div class="conc-num">02</div>
+                        <div class="conc-title">App Mobile</div>
+                        <p class="conc-desc">Développez une application Android qui résout un problème réel au Niger. Critères : design, fonctionnalité, chatbot IA intégré et impact social.</p>
+                        <div class="conc-foot"><i class="fa fa-trophy"></i> Trophée Meilleure Application Niger</div>
+                    </div>
+                    <div class="conc-card">
+                        <div class="cg-bar"></div>
+                        <div class="conc-num">03</div>
+                        <div class="conc-title">Art Oratoire — IA &amp; Avenir</div>
+                        <p class="conc-desc">Discours de 5 minutes sur le thème de l'IA en Afrique. Devant jury et public. Confiance, clarté et originalité de la pensée récompensées.</p>
+                        <div class="conc-foot"><i class="fa fa-trophy"></i> Trophée Meilleur Orateur Tech</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div id="page-galerie" class="page">
+
+    <div class="page-hero">
+        <div class="wrap">
+            <div class="breadcrumb"><span>Accueil</span><span class="bc-sep">/</span><b>Galerie</b></div>
+            <h2 class="h2 r" style="color:var(--white)">Galerie <em class="brand">des éditions</em></h2>
+            <p class="lead r d1" style="color:rgba(255,255,255,.46);max-width:600px">Revivez les moments forts des 7 éditions précédentes du Coding Camp. Photos d'ateliers, de remises de prix et de moments de partage.</p>
+        </div>
+    </div>
+
+    <section class="sec">
+        <div class="wrap">
+            <p class="eyebrow r">Édition 2024 — 7ème édition</p>
+            <h2 class="h2 r d1" style="margin-bottom:0">Dernière édition <em class="brand">en images</em></h2>
+            <div class="gal-grid r d2">
+                <div class="gal-item gal-big"><div class="gal-inner"><div class="gal-edition">2024</div><span class="gal-ico">👨‍💻</span><p class="gal-caption">Atelier Python — Niamey 2024</p></div><div class="gal-overlay"><strong>Atelier Python &amp; Robotique</strong><span>Niamey · 2024</span></div></div>
+                <div class="gal-item"><div class="gal-inner"><span class="gal-ico">🤖</span><p class="gal-caption">Robotique BBC micro:bit</p></div><div class="gal-overlay"><strong>Initiation Robotique</strong><span>Dosso · 2024</span></div></div>
+                <div class="gal-item"><div class="gal-inner"><span class="gal-ico">🏆</span><p class="gal-caption">Remise des trophées</p></div><div class="gal-overlay"><strong>Cérémonie de clôture</strong><span>Niamey · 2024</span></div></div>
+                <div class="gal-item"><div class="gal-inner"><span class="gal-ico">🚁</span><p class="gal-caption">Initiation drones Niger FPV</p></div><div class="gal-overlay"><strong>Pilotage de drones</strong><span>Niamey · 2024</span></div></div>
+                <div class="gal-item"><div class="gal-inner"><span class="gal-ico">🎤</span><p class="gal-caption">Concours art oratoire</p></div><div class="gal-overlay"><strong>Concours Art Oratoire</strong><span>Niamey · 2024</span></div></div>
+                <div class="gal-item"><div class="gal-inner"><span class="gal-ico">🎉</span><p class="gal-caption">Journée récréative</p></div><div class="gal-overlay"><strong>Journée Team-building</strong><span>Espace Zen · 2024</span></div></div>
+            </div>
+
+            <div class="gal-section-title r">Éditions précédentes</div>
+            <div class="gal-grid r d1">
+                <div class="gal-item"><div class="gal-inner"><div class="gal-edition">2022</div><span class="gal-ico">🏫</span><p class="gal-caption">1ère édition à Dosso</p></div><div class="gal-overlay"><strong>Extension à Dosso</strong><span>2022 · 5ème édition</span></div></div>
+                <div class="gal-item"><div class="gal-inner"><div class="gal-edition">2021</div><span class="gal-ico">💻</span><p class="gal-caption">Ateliers Scratch Niamey</p></div><div class="gal-overlay"><strong>Scratch &amp; Animation</strong><span>Niamey · 2021</span></div></div>
+                <div class="gal-item"><div class="gal-inner"><div class="gal-edition">2019</div><span class="gal-ico">🔧</span><p class="gal-caption">Robotique &amp; micro:bit</p></div><div class="gal-overlay"><strong>Atelier Robotique</strong><span>Niamey · 2019</span></div></div>
+                <div class="gal-item gal-big"><div class="gal-inner"><div class="gal-edition">2018</div><span class="gal-ico">👩‍💻</span><p class="gal-caption">Formation jeunes filles — 3ème édition</p></div><div class="gal-overlay"><strong>Inclusion des jeunes filles</strong><span>Niamey · 2018</span></div></div>
+                <div class="gal-item"><div class="gal-inner"><div class="gal-edition">2016</div><span class="gal-ico">🚀</span><p class="gal-caption">1ère édition historique</p></div><div class="gal-overlay"><strong>Lancement du Coding Camp</strong><span>Niamey · 2016</span></div></div>
+            </div>
+
+            <div class="gal-section-title r">Visites d'entreprises &amp; institutions</div>
+            <div class="gal-grid r d1">
+                <div class="gal-item"><div class="gal-inner"><span class="gal-ico">📡</span><p class="gal-caption">Visite Airtel Niger</p></div><div class="gal-overlay"><strong>Visite Airtel Niger</strong><span>Découverte télécoms</span></div></div>
+                <div class="gal-item"><div class="gal-inner"><span class="gal-ico">🏛️</span><p class="gal-caption">Assemblée Nationale</p></div><div class="gal-overlay"><strong>Assemblée Nationale du Niger</strong><span>Découverte institutions</span></div></div>
+                <div class="gal-item"><div class="gal-inner"><span class="gal-ico">🏦</span><p class="gal-caption">Visite Ecobank</p></div><div class="gal-overlay"><strong>Ecobank Niger</strong><span>Finance &amp; Numérique</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-sm sec-sand" style="text-align:center">
+        <div class="wrap r">
+            <p class="eyebrow" style="justify-content:center">Partager l'aventure</p>
+            <h2 class="h2 d1" style="margin-bottom:14px">Suivez-nous sur les réseaux</h2>
+            <p class="lead d2" style="max-width:480px;margin:0 auto 28px">1 900 abonnés Facebook · 533 abonnés YouTube. Retrouvez toutes nos photos et vidéos en direct du camp.</p>
+            <div class="d3" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+                <a href="https://www.facebook.com/supercrackacademy" target="_blank" rel="noopener" class="btn btn-dark btn-lg"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.youtube.com/@@SuperCrackAcademy" target="_blank" rel="noopener" class="btn btn-primary btn-lg"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="page-partenaires" class="page">
+
+    <div class="page-hero">
+        <div class="wrap">
+            <div class="breadcrumb"><span>Accueil</span><span class="bc-sep">/</span><b>Partenaires</b></div>
+            <h2 class="h2 r" style="color:var(--white)">Nos <em class="brand">partenaires</em></h2>
+            <p class="lead r d1" style="color:rgba(255,255,255,.46);max-width:600px">Le Coding Camp n'existe que grâce au soutien de ses partenaires institutionnels, associatifs et entreprises. Merci à tous.</p>
+        </div>
+    </div>
+
+    <section class="sec">
+        <div class="wrap">
+            <p class="eyebrow r">Partenaires 2026</p>
+            <h2 class="h2 r d1">Ils soutiennent <em class="brand">l'édition 2026</em></h2>
+            <div class="divider r d1"></div>
+            
+            <!-- Section UAM — Partenaire principal -->
+            <div class="uam-section r d2">
+                <div>
+                    <h3>Partenaire principal</h3>
+                    <div class="uam-name">Université Abdou Moumouni (UAM)</div>
+                    <p>Partenaire institutionnel et académique du Coding Camp. L'UAM accompagne Super Crack Academy dans la formation des jeunes nigériens aux métiers du numérique.</p>
+                </div>
+                <div class="uam-logo-placeholder">
+                    <img src="/Images/logo-uam.png" alt="Université Abdou Moumouni" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{textContent:'Logo UAM',style:'font-family:var(--fh);font-size:1.1rem;font-weight:700;color:var(--or);text-align:center'}));">
+                </div>
+            </div>
+
+            <!-- Grille de partenaires avec logos -->
+            <div class="partners-grid r d3">
+                <div class="partner-item">
+                    <img src="/Images/ecobank-4.jpg" alt="Ecobank" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'partner-placeholder',textContent:'Ecobank'}));">
+                </div>
+                <div class="partner-item">
+                    <img src="/Images/moov_visite.jpg" alt="Moov Africa" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'partner-placeholder',textContent:'Moov Africa'}));">
+                </div>
+                <div class="partner-item">
+                    <img src="/Images/visite_airtel.jpg" alt="Airtel Niger" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'partner-placeholder',textContent:'Airtel Niger'}));">
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">OLA Energy</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">Coris Bank</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">Zamani</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">ANSI</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">Université de Dosso</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">Collège Rawda Kiota</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">Niger FPV Drone</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">RTN</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">Cristale Eau Minérale</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">Imprimerie ZEN</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">Fondation Elh Dan Tera</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">Centech-i</span>
+                </div>
+                <div class="partner-item">
+                    <span class="partner-placeholder">Maradou Solutions</span>
+                </div>
+            </div>
+
+            <div class="become-box r d4">
+                <div>
+                    <p class="eyebrow" style="margin-bottom:10px">Rejoindre l'aventure</p>
+                    <div class="bb-title">Devenez partenaire du Coding Camp 2026</div>
+                    <p class="bb-body">Votre soutien permet à 250 jeunes d'accéder à des formations de qualité dans le numérique. En partenariat avec Super Crack Academy, bénéficiez d'une visibilité forte lors de l'événement et contribuez concrètement au développement du numérique au Niger.</p>
+                </div>
+                <div style="flex-shrink:0">
+                    <button class="btn btn-primary btn-lg" onclick="showPage('contact')" style="white-space:nowrap"><i class="fa fa-envelope"></i> Nous contacter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="page-infos" class="page">
+
+    <div class="page-hero">
+        <div class="wrap">
+            <div class="breadcrumb"><span>Accueil</span><span class="bc-sep">/</span><b>Informations pratiques</b></div>
+            <h2 class="h2 r" style="color:var(--white)">Informations <em class="brand">pratiques</em></h2>
+            <p class="lead r d1" style="color:rgba(255,255,255,.46);max-width:600px">Tout ce qu'il faut savoir pour participer au Coding Camp 2026 : dates, lieux, tarifs, transport et logistique.</p>
+        </div>
+    </div>
+
+    <section class="sec">
+        <div class="wrap">
+            <p class="eyebrow r">Dates, lieux &amp; tarifs</p>
+            <h2 class="h2 r d1">Informations <em class="brand">essentielles</em></h2>
+            <div class="divider r d1"></div>
+            <div class="info-grid">
+                <div class="info-card r d1">
+                    <div class="info-card-head"><div class="ich-ico"><i class="fa fa-calendar"></i></div><div><div class="ich-title">Dates du camp</div><div class="ich-sub">Programme prévisionnel 2026</div></div></div>
+                    <div class="info-card-body">
+                        <div class="info-row"><div class="ir-ico">📍</div><div class="ir-text"><strong>Kiota-Harikanassou</strong><span>2 – 4 Août 2026 · Gratuit</span></div></div>
+                        <div class="info-row"><div class="ir-ico">📍</div><div class="ir-text"><strong>Dosso</strong><span>5 – 7 Août 2026 · 5 000 FCFA</span></div></div>
+                        <div class="info-row"><div class="ir-ico">🎉</div><div class="ir-text"><strong>Journée récréative</strong><span>Dimanche 9 Août · Espace Zen (Kanazi)</span></div></div>
+                        <div class="info-row"><div class="ir-ico">📍</div><div class="ir-text"><strong>Niamey</strong><span>10 – 12 Août 2026 · 15 000 FCFA</span></div></div>
+                        <div class="info-row"><div class="ir-ico">🏆</div><div class="ir-text"><strong>Concours &amp; Clôture</strong><span>13 – 14 Août · Cérémonie 15 août (fête nationale)</span></div></div>
+                    </div>
+                </div>
+                <div class="info-card r d2">
+                    <div class="info-card-head"><div class="ich-ico"><i class="fa fa-users"></i></div><div><div class="ich-title">Public cible</div><div class="ich-sub">Répartition par tranche d'âge</div></div></div>
+                    <div class="info-card-body">
+                        <div class="info-row"><div class="ir-ico">👧</div><div class="ir-text"><strong>Enfants : 8 – 13/14 ans</strong><span>Scratch, Robotique BBC micro:bit, Chatbot IA basique</span></div></div>
+                        <div class="info-row"><div class="ir-ico">🧑</div><div class="ir-text"><strong>Adolescents : 13/14 – 18 ans</strong><span>Python, MIT App Inventor, Art oratoire, Entrepreneuriat</span></div></div>
+                        <div class="info-row"><div class="ir-ico">👨</div><div class="ir-text"><strong>Seniors : 20 ans et plus</strong><span>Formation Chatbot IA — demi-journée — 2 000 FCFA</span></div></div>
+                        <div class="info-row"><div class="ir-ico">♿</div><div class="ir-text"><strong>Personnes handicapées</strong><span>Aménagements spécifiques prévus. Ouvert à tous.</span></div></div>
+                    </div>
+                </div>
+                <div class="info-card r d3">
+                    <div class="info-card-head"><div class="ich-ico"><i class="fa fa-box-open"></i></div><div><div class="ich-title">Matériel fourni</div><div class="ich-sub">Inclus dans les frais de participation</div></div></div>
+                    <div class="info-card-body">
+                        <div class="info-row"><div class="ir-ico">💻</div><div class="ir-text"><strong>Ordinateurs fournis</strong><span>Chaque participant dispose d'un poste informatique</span></div></div>
+                        <div class="info-row"><div class="ir-ico">🤖</div><div class="ir-text"><strong>BBC micro:bit &amp; Freenove</strong><span>Cartes et kits robotiques mis à disposition</span></div></div>
+                        <div class="info-row"><div class="ir-ico">🚁</div><div class="ir-text"><strong>Drones Niger FPV</strong><span>Séance pilotage avec les drones du partenaire</span></div></div>
+                        <div class="info-row"><div class="ir-ico">🍽️</div><div class="ir-text"><strong>Restauration partielle</strong><span>Les frais couvrent une partie de la restauration</span></div></div>
+                    </div>
+                </div>
+                <div class="info-card r d4">
+                    <div class="info-card-head"><div class="ich-ico"><i class="fa fa-certificate"></i></div><div><div class="ich-title">À l'issue du camp</div><div class="ich-sub">Ce que vous repartez avec</div></div></div>
+                    <div class="info-card-body">
+                        <div class="info-row"><div class="ir-ico">📜</div><div class="ir-text"><strong>Certificat de participation</strong><span>Remis lors de la cérémonie de clôture du 15 août</span></div></div>
+                        <div class="info-row"><div class="ir-ico">🏆</div><div class="ir-text"><strong>Trophées concours</strong><span>Pour les lauréats Scratch, App Mobile et Art Oratoire</span></div></div>
+                        <div class="info-row"><div class="ir-ico">💡</div><div class="ir-text"><strong>Projet personnel</strong><span>Jeu Scratch, application Android ou chatbot IA fonctionnel</span></div></div>
+                        <div class="info-row"><div class="ir-ico">🤝</div><div class="ir-text"><strong>Réseau &amp; communauté</strong><span>Intégration dans la communauté Super Crack Academy</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec sec-sand">
+        <div class="wrap">
+            <p class="eyebrow r">Participation financière</p>
+            <h2 class="h2 r d1">Tarifs <em class="brand">accessibles</em></h2>
+            <div class="divider r d1"></div>
+            <p class="text r d2" style="max-width:600px;margin-bottom:0">Les frais de participation couvrent une partie de la restauration durant les jours de formation et le transport en bus pour la journée récréative. Le paiement est accepté en Mobile Money, en espèces ou par virement.</p>
+            <div class="tarif-grid">
+                <div class="tarif-card hl r d1">
+                    <div class="tc-head"><span class="tc-city">Kiota-Harikanassou</span><div class="tc-price">GRATUIT</div><div class="tc-unit">Aucun frais d'inscription</div></div>
+                    <div class="tc-body"><div class="tc-name">Village de Kiota</div><p class="tc-desc">Formation entièrement gratuite. SCA prend en charge l'intégralité pour maximiser l'accès aux jeunes ruraux.</p><p class="tc-note">50 places disponibles</p></div>
+                </div>
+                <div class="tarif-card r d2">
+                    <div class="tc-head"><span class="tc-city">Dosso</span><div class="tc-price">5 000</div><div class="tc-unit">FCFA · par participant</div></div>
+                    <div class="tc-body"><div class="tc-name">Ville de Dosso</div><p class="tc-desc">Accès aux formations Python, Robotique BBC micro:bit et MIT App Inventor. Matériel pédagogique fourni.</p><p class="tc-note">50 places disponibles</p></div>
+                </div>
+                <div class="tarif-card r d3">
+                    <div class="tc-head"><span class="tc-city">Niamey — 8 à 18 ans</span><div class="tc-price">15 000</div><div class="tc-unit">FCFA · par participant</div></div>
+                    <div class="tc-body"><div class="tc-name">Capitale Niamey</div><p class="tc-desc">Programme complet avancé : IA, Chatbot, Drones, Entrepreneuriat, visites d'entreprises et cérémonie de clôture.</p><p class="tc-note">150 places disponibles</p></div>
+                </div>
+                <div class="tarif-card r d4">
+                    <div class="tc-head"><span class="tc-city">Seniors — 20 ans et plus</span><div class="tc-price">2 000</div><div class="tc-unit">FCFA · toutes villes</div></div>
+                    <div class="tc-body"><div class="tc-name">Formation Chatbot IA</div><p class="tc-desc">Formation d'une demi-journée sur le développement d'un chatbot IA. Accessible dans toutes les villes du camp.</p><p class="tc-note">Places ouvertes</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec">
+        <div class="wrap">
+            <p class="eyebrow r">Logistique</p>
+            <h2 class="h2 r d1">Transport <em class="brand">&amp; accès</em></h2>
+            <div class="divider r d1"></div>
+            <p class="text r d2" style="max-width:620px;margin-bottom:28px">Le transport en bus pour la journée récréative à l'Espace Zen (Kanazi) est inclus dans les frais de participation. Pour les sessions, les participants se rendent sur place.</p>
+            <div class="transport-grid r d3">
+                <div class="tr-item"><span class="tr-ico">🚌</span><div class="tr-title">Bus journée récréative</div><p class="tr-body">Transport inclus dans les frais de participation. Départ collectif le dimanche 9 août vers l'Espace Zen (Kanazi).</p></div>
+                <div class="tr-item"><span class="tr-ico">📍</span><div class="tr-title">Lieux de formation</div><p class="tr-body">Les sessions se déroulent dans des établissements partenaires dans chaque ville. Adresses communiquées à l'inscription.</p></div>
+                <div class="tr-item"><span class="tr-ico">📞</span><div class="tr-title">Assistance logistique</div><p class="tr-body">L'équipe Super Crack Academy répond à toutes vos questions logistiques via WhatsApp avant et pendant le camp.</p></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div id="page-contact" class="page">
+
+    <div class="page-hero">
+        <div class="wrap">
+            <div class="breadcrumb"><span>Accueil</span><span class="bc-sep">/</span><b>Contact</b></div>
+            <h2 class="h2 r" style="color:var(--white)">Nous <em class="brand">contacter</em></h2>
+            <p class="lead r d1" style="color:rgba(255,255,255,.46);max-width:600px">Une question sur le camp, une demande de partenariat ou simplement envie d'en savoir plus ? Notre équipe vous répond rapidement.</p>
+        </div>
+    </div>
+
+    <section class="sec">
+        <div class="wrap">
+            <div class="contact-layout">
+                <div>
+                    <p class="eyebrow r">Nous joindre</p>
+                    <h2 class="h2 r d1" style="margin-bottom:28px">Coordonnées <em class="brand">&amp; réseaux</em></h2>
+                    <div class="contact-info-card r d2">
+                        <div class="cic-head"><p>Super Crack Academy</p><strong>Association à but non lucratif · Niamey, Niger</strong></div>
+                        <div class="contact-items">
+                            <div class="ci-item"><div class="ci-ico"><i class="fa fa-location-dot"></i></div><div class="ci-text"><strong>Adresse</strong><p>Niamey, République du Niger</p></div></div>
+                            <div class="ci-item"><div class="ci-ico"><i class="fab fa-facebook-f"></i></div><div class="ci-text"><strong>Facebook</strong><p>facebook.com/supercrackacademy</p></div></div>
+                            <div class="ci-item"><div class="ci-ico"><i class="fab fa-youtube"></i></div><div class="ci-text"><strong>YouTube</strong><p>youtube.com/@@SuperCrackAcademy</p></div></div>
+                            <div class="ci-item"><div class="ci-ico"><i class="fab fa-whatsapp"></i></div><div class="ci-text"><strong>WhatsApp</strong><p>Disponible pour inscription et renseignements</p></div></div>
+                            <div class="ci-item"><div class="ci-ico"><i class="fa fa-user"></i></div><div class="ci-text"><strong>Responsable projet</strong><p>Mr Omar Sidikou</p></div></div>
+                        </div>
+                        <div class="social-links-dark">
+                            <a href="https://www.facebook.com/supercrackacademy" class="sld" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/@@SuperCrackAcademy" class="sld" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="sld"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="sld"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="sld"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="eyebrow r">Envoyer un message</p>
+                    <div class="contact-form r d2">
+                        <div class="cf-title">Formulaire de contact</div>
+                        <p class="cf-sub">Pour toute demande : partenariat, inscription, renseignements ou autre.</p>
+                        <div class="form-row">
+                            <div class="form-group"><label for="f-prenom">Prénom *</label><input type="text" placeholder="Votre prénom" id="f-prenom"></div>
+                            <div class="form-group"><label for="f-nom">Nom *</label><input type="text" placeholder="Votre nom" id="f-nom"></div>
+                        </div>
+                        <div class="form-group"><label for="f-email">Email</label><input type="email" placeholder="votre@@email.com" id="f-email"></div>
+                        <div class="form-group">
+                            <label for="f-objet">Objet *</label>
+                            <select id="f-objet">
+                                <option value="">Choisissez un objet</option>
+                                <option>Inscription au Coding Camp</option>
+                                <option>Demande de partenariat</option>
+                                <option>Renseignements généraux</option>
+                                <option>Presse &amp; Médias</option>
+                                <option>Autre demande</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label for="f-msg">Message *</label><textarea placeholder="Votre message..." id="f-msg"></textarea></div>
+                        <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="submitForm()"><i class="fa fa-paper-plane"></i> Envoyer le message</button>
+                        <p class="form-note">* Champs obligatoires. Vous pouvez aussi nous contacter directement via WhatsApp pour une réponse plus rapide.</p>
+                        <div class="form-success" id="form-success"><p>✅ Message envoyé ! Nous vous répondrons dans les plus brefs délais.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec sec-sand">
+        <div class="wrap">
+            <div class="faq-layout">
+                <div>
+                    <p class="eyebrow r">FAQ</p>
+                    <h2 class="h2 r d1" style="margin-bottom:16px">Questions <em class="brand">fréquentes</em></h2>
+                    <div class="divider r d1"></div>
+                    <p class="text r d2" style="color:var(--muted);margin-bottom:24px">Retrouvez ici les réponses aux questions les plus fréquentes sur le camp, l'inscription et les formations.</p>
+                    <div class="r d3">
+                        <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px">
+                            <p style="font-size:.78rem;color:var(--muted);margin-bottom:14px">Vous ne trouvez pas votre réponse ?</p>
+                            <a href="https://wa.me/22700000000" class="btn btn-wa" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Écrire sur WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-list r d2">
+                    <div class="fq-item"><div class="fq-q">Quel âge faut-il pour participer ?<div class="fq-ico"><i class="fa fa-plus"></i></div></div><div class="fq-a">Le camp est ouvert dès 8 ans. Trois catégories : Enfants (8–13/14 ans), Adolescents (13/14–18 ans) et Seniors (20 ans et plus). Chaque groupe suit un programme adapté à son niveau.</div></div>
+                    <div class="fq-item"><div class="fq-q">Faut-il des connaissances préalables ?<div class="fq-ico"><i class="fa fa-plus"></i></div></div><div class="fq-a">Aucun prérequis n'est nécessaire. Les formations débutent depuis les bases. Les débutants complets comme les jeunes avec des notions sont les bienvenus.</div></div>
+                    <div class="fq-item"><div class="fq-q">Le matériel informatique est-il fourni ?<div class="fq-ico"><i class="fa fa-plus"></i></div></div><div class="fq-a">Oui, entièrement. Ordinateurs, cartes BBC micro:bit, kits robotiques Freenove et drones sont mis à disposition par Super Crack Academy. Les participants n'ont besoin d'apporter que leur motivation.</div></div>
+                    <div class="fq-item"><div class="fq-q">Comment s'inscrire et payer ?<div class="fq-ico"><i class="fa fa-plus"></i></div></div><div class="fq-a">L'inscription se fait via le formulaire Google Form ou par WhatsApp. Le paiement est accepté en Mobile Money (Airtel Money, Moov Money), en espèces sur place ou par virement. Les coordonnées sont communiquées à la confirmation.</div></div>
+                    <div class="fq-item"><div class="fq-q">Le camp accueille-t-il les personnes handicapées ?<div class="fq-ico"><i class="fa fa-plus"></i></div></div><div class="fq-a">Absolument. Une attention particulière est portée sur l'inclusion des personnes en situation de handicap. Des aménagements spécifiques sont prévus dans chaque ville.</div></div>
+                    <div class="fq-item"><div class="fq-q">Qu'est-ce que la journée récréative ?<div class="fq-ico"><i class="fa fa-plus"></i></div></div><div class="fq-a">Le dimanche 9 août est dédié au team-building à l'Espace Zen (Kanazi). Activités ludiques, culturelles et sportives pour renforcer la cohésion entre participants des trois villes. Transport en bus inclus.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div id="page-inscription" class="page">
+
+    <div class="inscription-hero">
+        <div class="wrap">
+            <div class="breadcrumb"><span>Accueil</span><span class="bc-sep">/</span><b>Inscription</b></div>
+            <h2 class="h2 r d1" style="color:var(--white)">Inscrivez-vous au<br><em style="font-style:italic;color:var(--or3)">Coding Camp 2026</em></h2>
+            <p class="lead r d2" style="color:rgba(255,255,255,.46);max-width:560px;margin-top:12px">Places limitées — 250 jeunes attendus. Ne manquez pas la 8ème édition du plus grand camp numérique du Niger.</p>
+        </div>
+    </div>
+
+    <section class="sec sec-dark">
+        <div class="wrap">
+            <div class="insc-layout">
+                <div class="insc-info">
+                    <p class="eyebrow gold r">Informations d'inscription</p>
+                    <h3 style="font-family:var(--fh);font-size:1.5rem;font-weight:700;color:var(--white);margin-bottom:20px" class="r d1">Ce que vous devez savoir</h3>
+                    <div class="insc-list r d2">
+                        <div class="insc-li"><strong>2 – 14 août 2026</strong> — deux semaines intensives</div>
+                        <div class="insc-li"><strong>Niamey · Dosso · Kiota-Harikanassou</strong> — choisissez votre ville</div>
+                        <div class="insc-li">9 modules de formation · Matériel entièrement fourni</div>
+                        <div class="insc-li">Concours numérique · Certificat remis à tous</div>
+                        <div class="insc-li">Journée récréative · Transport en bus inclus</div>
+                        <div class="insc-li">Paiement Mobile Money, Espèces ou Virement</div>
+                    </div>
+                    <div class="r d3" style="margin-top:24px">
+                        <p style="font-family:var(--fm);font-size:.55rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.22);margin-bottom:14px">Tarifs par ville</p>
+                        <div class="tarif-mini-list">
+                            <div class="tml-row"><span class="tml-city">📍 Kiota-Harikanassou</span><span class="tml-price pfree">GRATUIT</span></div>
+                            <div class="tml-row"><span class="tml-city">📍 Dosso</span><span class="tml-price pyellow">5 000 FCFA</span></div>
+                            <div class="tml-row"><span class="tml-city">📍 Niamey (8–18 ans)</span><span class="tml-price porange">15 000 FCFA</span></div>
+                            <div class="tml-row"><span class="tml-city">Seniors (20 ans+) — toutes villes</span><span class="tml-price pyellow">2 000 FCFA</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="insc-panel r d2">
+                    <div class="ip-head">
+                        <small>Choisissez votre mode d'inscription</small>
+                        <strong>Coding Camp 2026 — 8ème Édition</strong>
+                    </div>
+                    <div class="ip-options">
+                        <a href="https://wa.me/22700000000?text=Bonjour%2C%20je%20souhaite%20m%27inscrire%20au%20Coding%20Camp%202026%20de%20Super%20Crack%20Academy." class="ip-opt ip-wa" target="_blank" rel="noopener">
+                            <div class="ip-opt-ico"><i class="fab fa-whatsapp"></i></div>
+                            <div class="ip-txt"><strong>Inscrire via WhatsApp</strong><span>Réponse rapide · Confirmation immédiate</span></div>
+                            <i class="fa fa-arrow-right ip-arrow"></i>
+                        </a>
+                        <a href="https://forms.google.com" class="ip-opt ip-gf" target="_blank" rel="noopener">
+                            <div class="ip-opt-ico"><i class="fab fa-google"></i></div>
+                            <div class="ip-txt"><strong>Formulaire Google Form</strong><span>Formulaire en ligne · Simple et rapide</span></div>
+                            <i class="fa fa-arrow-right ip-arrow"></i>
+                        </a>
+                    </div>
+                    <div class="ip-checks">
+                        <div class="ipck">Confirmation immédiate</div>
+                        <div class="ipck">Places limitées</div>
+                        <div class="ipck">Mobile Money OK</div>
+                        <div class="ipck">Certificat inclus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-sm sec-sand" style="text-align:center">
+        <div class="wrap r">
+            <p class="eyebrow" style="justify-content:center">Une question avant de s'inscrire ?</p>
+            <h3 class="h3 d1" style="margin-bottom:14px">Nous sommes là pour vous aider</h3>
+            <p class="text d2" style="max-width:500px;margin:0 auto 28px;color:var(--muted)">Contactez-nous directement sur WhatsApp ou consultez la FAQ. Notre équipe répond rapidement à toutes vos interrogations.</p>
+            <div class="d3" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+                <a href="https://wa.me/22700000000" class="btn btn-wa btn-lg" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Poser une question</a>
+                <button class="btn btn-outline btn-lg" onclick="showPage('contact')"><i class="fa fa-circle-question"></i> Voir la FAQ</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div id="page-realisations" class="page">
+
+    <div class="real-hero">
+        <div class="wrap">
+            <div class="breadcrumb" style="color:rgba(255,255,255,.6)"><span>Accueil</span><span class="bc-sep">/</span><b style="color:var(--white)">Réalisations</b></div>
+            <p class="eyebrow r">Notre bilan</p>
+            <h2 class="h2 r d1" style="color:var(--white)">Nos <em style="font-style:italic;color:rgba(255,255,255,.85)">réalisations</em></h2>
+            <p class="lead r d2" style="color:rgba(255,255,255,.72);max-width:580px;margin-top:12px">Depuis 2016, Super Crack Academy a formé plus de 700 jeunes nigériens au numérique. Voici le bilan complet de 8 éditions du Coding Camp.</p>
+        </div>
+    </div>
+
+    <section class="sec">
+        <div class="wrap">
+            <p class="eyebrow r">Chiffres clés</p>
+            <h2 class="h2 r d1">L'impact en <em class="brand">chiffres</em></h2>
+            <div class="divider r d1"></div>
+            <div class="impact-big">
+                <div class="ib-item r d1"><span class="ib-num"><span class="ctr" data-t="700">0</span>+</span><p class="ib-label">Jeunes formés à la programmation et à la robotique</p></div>
+                <div class="ib-item r d2"><span class="ib-num">~<span class="ctr" data-t="180">0</span></span><p class="ib-label">Jeunes filles formées au numérique</p></div>
+                <div class="ib-item r d3"><span class="ib-num"><span class="ctr" data-t="8">0</span></span><p class="ib-label">Éditions du Coding Camp organisées depuis 2016</p></div>
+                <div class="ib-item r d1"><span class="ib-num"><span class="ctr" data-t="3">0</span></span><p class="ib-label">Villes couvertes : Niamey, Dosso, Kiota-Harikanassou</p></div>
+                <div class="ib-item r d2"><span class="ib-num"><span class="ctr" data-t="8">0</span></span><p class="ib-label">Visites d'entreprises et institutions organisées</p></div>
+                <div class="ib-item r d3"><span class="ib-num"><span class="ctr" data-t="250">0</span></span><p class="ib-label">Participants visés pour l'édition 2026</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec sec-sand">
+        <div class="wrap">
+            <p class="eyebrow r">Historique détaillé</p>
+            <h2 class="h2 r d1">Les <em class="brand">8 éditions</em></h2>
+            <div class="divider r d1"></div>
+            <div class="editions-timeline r d2">
+                <div class="et-item" onclick="toggleEt(this)">
+                    <div class="et-head"><div class="et-year">2026</div><div class="et-info"><strong>8ème édition — En cours</strong><p>Niamey · Dosso · Kiota-Harikanassou</p></div><div class="et-stats"><div class="et-stat"><span class="esn">250</span><span class="esl">Objectif</span></div><div class="et-stat"><span class="esn">3</span><span class="esl">Villes</span></div></div></div>
+                    <div class="et-body"><p style="font-size:.84rem;color:var(--muted);line-height:1.7">La 8ème édition est la plus ambitieuse à ce jour : 9 modules de formation, 15 formateurs, chatbot IA, pilotage de drones et concours numérique national. Objectif : 250 participants dans 3 villes du 2 au 14 août 2026.</p><div class="et-tags"><span class="tag tg-or">Scratch</span><span class="tag tg-or">Python</span><span class="tag tg-or">Robotique</span><span class="tag tg-or">IA / Chatbot</span><span class="tag tg-or">Drones</span><span class="tag tg-or">Art oratoire</span></div></div>
+                </div>
+                <div class="et-item" onclick="toggleEt(this)">
+                    <div class="et-head"><div class="et-year">2024</div><div class="et-info"><strong>7ème édition</strong><p>Niamey · Dosso · Kiota-Harikanassou</p></div><div class="et-stats"><div class="et-stat"><span class="esn">150+</span><span class="esl">Participants</span></div><div class="et-stat"><span class="esn">3</span><span class="esl">Villes</span></div></div></div>
+                    <div class="et-body"><p style="font-size:.84rem;color:var(--muted);line-height:1.7">Introduction des ateliers IA et pilotage de drones pour la première fois. Kiota-Harikanassou rejoint le camp avec une session gratuite. Concours numérique final à Niamey avec remise de trophées.</p><div class="et-tags"><span class="tag tg-or">Scratch</span><span class="tag tg-or">Python</span><span class="tag tg-or">IA</span><span class="tag tg-or">Drones</span><span class="tag tg-green">Kiota — Gratuit</span></div></div>
+                </div>
+                <div class="et-item" onclick="toggleEt(this)">
+                    <div class="et-head"><div class="et-year">2022</div><div class="et-info"><strong>5ème édition — Extension à Dosso</strong><p>Niamey · Dosso</p></div><div class="et-stats"><div class="et-stat"><span class="esn">100+</span><span class="esl">Participants</span></div><div class="et-stat"><span class="esn">2</span><span class="esl">Villes</span></div></div></div>
+                    <div class="et-body"><p style="font-size:.84rem;color:var(--muted);line-height:1.7">Première extension hors de Niamey avec l'ouverture d'une session à Dosso. Doublement de la capacité d'accueil. Première visite d'une institution nationale (Assemblée Nationale).</p><div class="et-tags"><span class="tag tg-or">Scratch</span><span class="tag tg-or">Python</span><span class="tag tg-or">Robotique</span><span class="tag tg-gold">Dosso — 1ère fois</span></div></div>
+                </div>
+                <div class="et-item" onclick="toggleEt(this)">
+                    <div class="et-head"><div class="et-year">2021</div><div class="et-info"><strong>4ème édition</strong><p>Niamey</p></div><div class="et-stats"><div class="et-stat"><span class="esn">80+</span><span class="esl">Participants</span></div><div class="et-stat"><span class="esn">1</span><span class="esl">Ville</span></div></div></div>
+                    <div class="et-body"><p style="font-size:.84rem;color:var(--muted);line-height:1.7">Reprise après la période Covid. Renforcement du programme avec l'ajout de l'anglais numérique et de l'art oratoire. Première journée récréative organisée.</p><div class="et-tags"><span class="tag tg-or">Scratch</span><span class="tag tg-or">Python</span><span class="tag tg-or">Anglais</span><span class="tag tg-or">Art oratoire</span></div></div>
+                </div>
+                <div class="et-item" onclick="toggleEt(this)">
+                    <div class="et-head"><div class="et-year">2019</div><div class="et-info"><strong>3ème édition</strong><p>Niamey</p></div><div class="et-stats"><div class="et-stat"><span class="esn">70+</span><span class="esl">Participants</span></div><div class="et-stat"><span class="esn">1</span><span class="esl">Ville</span></div></div></div>
+                    <div class="et-body"><p style="font-size:.84rem;color:var(--muted);line-height:1.7">Introduction du Python et première session robotique avec BBC micro:bit. Première visite d'entreprise (Airtel Niger). Début des formations spécifiques pour les jeunes filles.</p><div class="et-tags"><span class="tag tg-or">Python — 1ère fois</span><span class="tag tg-or">BBC micro:bit</span><span class="tag tg-gold">Visite Airtel</span></div></div>
+                </div>
+                <div class="et-item" onclick="toggleEt(this)">
+                    <div class="et-head"><div class="et-year">2016</div><div class="et-info"><strong>1ère édition — Lancement</strong><p>Niamey</p></div><div class="et-stats"><div class="et-stat"><span class="esn">30+</span><span class="esl">Participants</span></div><div class="et-stat"><span class="esn">1</span><span class="esl">Ville</span></div></div></div>
+                    <div class="et-body"><p style="font-size:.84rem;color:var(--muted);line-height:1.7">La toute première édition du Coding Camp à Niamey. Initiation à Scratch et introduction à la programmation pour les jeunes nigériens. Le début d'une aventure qui allait transformer des centaines de vies.</p><div class="et-tags"><span class="tag tg-or">Scratch</span><span class="tag tg-gold">1ère édition historique</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec">
+        <div class="wrap">
+            <p class="eyebrow r">Ils témoignent</p>
+            <h2 class="h2 r d1">Ce que disent nos <em class="brand">participants</em></h2>
+            <div class="divider r d1"></div>
+            <div class="temo-grid">
+                <div class="temo-card r d1"><p class="temo-quote">Le Coding Camp m'a ouvert les yeux sur le monde du numérique. J'ai appris Python en une semaine et créé mon premier robot. C'est une expérience qui change vraiment la vie.</p><div class="temo-author"><div class="temo-av" style="background:linear-gradient(135deg,#C0510A,#E8661E)">AI</div><div><div class="temo-name">Abdoul Ibrahim</div><div class="temo-role">Participant 2024 · Niamey · 16 ans</div></div></div></div>
+                <div class="temo-card r d2"><p class="temo-quote">En tant que jeune fille, je pensais que l'informatique n'était pas pour moi. Le Coding Camp m'a prouvé le contraire. J'ai gagné le concours Scratch de ma catégorie !</p><div class="temo-author"><div class="temo-av" style="background:linear-gradient(135deg,#7C3AED,#A855F7)">FA</div><div><div class="temo-name">Fatouma Adamou</div><div class="temo-role">Participante 2024 · Dosso · 14 ans</div></div></div></div>
+                <div class="temo-card r d3"><p class="temo-quote">Le module IA et chatbot m'a fasciné. J'ai pu créer une application mobile avec un chatbot qui fonctionne sans internet. Je n'aurais jamais cru pouvoir faire ça avant le camp.</p><div class="temo-author"><div class="temo-av" style="background:linear-gradient(135deg,#0D9488,#0891B2)">MS</div><div><div class="temo-name">Moussa Sani</div><div class="temo-role">Participant 2024 · Niamey · 18 ans</div></div></div></div>
+            </div>
+        </div>
+    </section>
+</div>
