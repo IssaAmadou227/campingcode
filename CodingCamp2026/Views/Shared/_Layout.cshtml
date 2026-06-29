@@ -5,6 +5,15 @@
 <html lang="fr">
 
 <head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHM15W8M67"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VHM15W8M67');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#C0510A">
@@ -13,10 +22,15 @@
           content="Coding Camp 2026, 8ème édition — du 2 au 14 août 2026. Niamey, Dosso, Kiota. Programmation, Robotique, Intelligence Artificielle.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@@0,700;0,900;1,700&family=Inter:wght@@300;400;500;600;700&family=JetBrains+Mono:wght@@400;500&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <link rel="preload" as="image" href="~/Images/_DSC8949.JPG">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@@0,700;0,900;1,700&family=Inter:wght@@300;400;500;600;700&family=JetBrains+Mono:wght@@400;500&display=swap"
+          rel="stylesheet">
+
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
 </head>
 
@@ -24,7 +38,7 @@
 
     <div id="loader">
         <div class="ld-logo">
-            <div class="ld-ico">🦒</div>
+            <div class="ld-ico"><img src="~/logoSuperCrackAcademy/logo-sca-head.png" alt="Super Crack Academy"></div>
             <div>
                 <div class="ld-name"><b>Super Crack</b> Academy</div>
             </div>
@@ -38,7 +52,7 @@
     <nav id="nav">
         <div class="nw">
             <div class="nbrand" onclick="showPage('accueil')">
-                <div class="nbrand-ico">🦒</div>
+                <div class="nbrand-ico"><img src="~/logoSuperCrackAcademy/logo-sca-head.png" alt="Super Crack Academy"></div>
                 <div class="nbrand-txt">
                     <strong>Super Crack Academy</strong>
                     <span>Coding Camp 2026</span>
@@ -61,6 +75,7 @@
             <button id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
     </nav>
+
     <div id="mob">
         <button class="nlink" data-page="accueil" onclick="showPage('accueil');closeMob()">Accueil</button>
         <button class="nlink" data-page="apropos" onclick="showPage('apropos');closeMob()">À propos</button>
@@ -69,77 +84,110 @@
         <button class="nlink" data-page="galerie" onclick="showPage('galerie');closeMob()">Galerie</button>
         <button class="nlink" data-page="partenaires" onclick="showPage('partenaires');closeMob()">Partenaires</button>
         <button class="nlink" data-page="infos" onclick="showPage('infos');closeMob()">Infos pratiques</button>
-        <button class="nlink" data-page="realisations"
-                onclick="showPage('realisations');closeMob()">Réalisations</button>
+        <button class="nlink" data-page="realisations" onclick="showPage('realisations');closeMob()">Réalisations</button>
         <button class="nlink" data-page="contact" onclick="showPage('contact');closeMob()">Contact</button>
-        <button class="ncta" onclick="showPage('inscription');closeMob()"><i class="fa fa-pen-to-square"></i>
-            S'inscrire</button>
+        <button class="ncta" onclick="showPage('inscription');closeMob()">
+            <i class="fa fa-pen-to-square"></i> S'inscrire
+        </button>
+    </div>
+
+    @RenderBody()
+
+    <footer>
+        <div class="wrap">
+            <div class="footer-grid">
+
+                <div class="fg-brand">
+                    <div class="fl-name">
+                        <div class="fl-ico">
+                            <img src="~/logoSuperCrackAcademy/logo-sca-head.png" alt="Super Crack Academy">
+                        </div>
+                        <strong>Super Crack Academy</strong>
+                    </div>
+                    <p>
+                        Association à but non lucratif — sensibilisation à la culture numérique, initiation à la
+                        programmation et à la robotique pour les jeunes nigériens depuis 2016.
+                    </p>
+                    <div class="socials">
+                        <a href="mailto:contact@supercrackacademy.org" class="soc" title="Email">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="https://www.facebook.com/supercrackacademy" class="soc" target="_blank" rel="noopener" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@@SuperCrackAcademy" class="soc" target="_blank" rel="noopener" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/33652665964" class="soc" target="_blank" rel="noopener" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="fc-title">Navigation</p>
+                    <ul class="fc-links">
+                        <li><a onclick="showPage('accueil')">Accueil</a></li>
+                        <li><a onclick="showPage('apropos')">À propos</a></li>
+                        <li><a onclick="showPage('programme')">Programme</a></li>
+                        <li><a onclick="showPage('formateurs')">Formateurs</a></li>
+                        <li><a onclick="showPage('galerie')">Galerie</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="fc-title">Informations</p>
+                    <ul class="fc-links">
+                        <li><a onclick="showPage('partenaires')">Partenaires</a></li>
+                        <li><a onclick="showPage('infos')">Infos pratiques</a></li>
+                        <li><a onclick="showPage('contact')">Contact</a></li>
+                        <li><a onclick="showPage('realisations')">Réalisations</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="fc-title">Contact rapide</p>
+                    <ul class="fc-links">
+                        <li><a href="#">📍 Niamey, Niger</a></li>
+                        <li>
+                            <a href="mailto:contact@supercrackacademy.org">
+                                ✉️ contact@supercrackacademy.org
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/33652665964" target="_blank" rel="noopener">
+                                💬 WhatsApp : +33 6 52 66 59 64
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+22799550055">
+                                📞 +227 99 55 00 55
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://supercrackacademy.org" target="_blank" rel="noopener">
+                                🌐 supercrackacademy.org
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>
+                    © @DateTime.Now.Year Super Crack Academy · Tous droits réservés · Conçu par
+                    <a href="#" style="color:rgba(255,255,255,.35)">Maradou Solutions</a>
+                </span>
+                <span>Fait avec <span class="heart">♥</span> pour la jeunesse du Niger</span>
+            </div>
         </div>
+    </footer>
 
-        @RenderBody()
+    <a href="#" id="btt" aria-label="Retour en haut"><i class="fa fa-arrow-up"></i></a>
 
-        <footer>
-            <div class="wrap">
-                <div class="footer-grid">
-                    <div class="fg-brand">
-                        <div class="fl-name">
-                            <div class="fl-ico">🦒</div><strong>Super Crack Academy</strong>
-                        </div>
-                        <p>Association à but non lucratif — sensibilisation à la culture numérique, initiation à la
-                            programmation et à la robotique pour les jeunes nigériens depuis 2016.</p>
-                            <div class="socials">
-                                <a href="https://www.facebook.com/supercrackacademy" class="soc" target="_blank"
-                                   rel="noopener"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.youtube.com/@@SuperCrackAcademy" class="soc" target="_blank"
-                                   rel="noopener"><i class="fab fa-youtube"></i></a>
-                                <a href="#" class="soc"><i class="fab fa-whatsapp"></i></a>
-                                <a href="#" class="soc"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="soc"><i class="fab fa-tiktok"></i></a>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="fc-title">Navigation</p>
-                            <ul class="fc-links">
-                                <li><a onclick="showPage('accueil')">Accueil</a></li>
-                                <li><a onclick="showPage('apropos')">À propos</a></li>
-                                <li><a onclick="showPage('programme')">Programme</a></li>
-                                <li><a onclick="showPage('formateurs')">Formateurs</a></li>
-                                <li><a onclick="showPage('galerie')">Galerie</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="fc-title">Informations</p>
-                            <ul class="fc-links">
-                                <li><a onclick="showPage('partenaires')">Partenaires</a></li>
-                                <li><a onclick="showPage('infos')">Infos pratiques</a></li>
-                                <li><a onclick="showPage('contact')">Contact</a></li>
-                                <li><a onclick="showPage('realisations')">Réalisations</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="fc-title">Contact rapide</p>
-                            <ul class="fc-links">
-                                <li><a href="#">📍 Niamey, Niger</a></li>
-                                <li><a href="https://www.facebook.com/supercrackacademy" target="_blank" rel="noopener">Facebook
-                                    officiel</a></li>
-                                    <li><a href="https://www.youtube.com/@@SuperCrackAcademy" target="_blank" rel="noopener">Chaîne
-                                        YouTube</a></li>
-                                        <li><a onclick="showPage('inscription')" style="color:var(--or)">→ S'inscrire au camp</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="footer-bottom">
-                                <span>© @DateTime.Now.Year Super Crack Academy · Tous droits réservés · Conçu par Maradou Solutions ·
-                                    Contact :+227 99 79 04 27 / +227 97 65 79 34 </span>
-                                    <span>Fait avec <span class="heart">♥</span> pour la jeunesse du Niger</span>
-                                </div>
-                            </div>
-                        </footer>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
 
-                        <a href="#" id="btt" aria-label="Retour en haut"><i class="fa fa-arrow-up"></i></a>
-
-                        <script src="~/js/site.js" asp-append-version="true"></script>
-                        @await RenderSectionAsync("Scripts", required: false)
-                    </body>
-
-                </html>
+</html>

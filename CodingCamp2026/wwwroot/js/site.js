@@ -1,4 +1,23 @@
-/* ── LOADER ── */
+//@Maradou Solutions implement all js features here :IAmadou
+document.addEventListener('error', (e) => {
+  const t = e.target;
+  if (!t || t.tagName !== 'IMG' || t.dataset.fbk) return;
+  t.dataset.fbk = '1';
+  const ps = t.closest('.ps-logo-area');
+  if (ps) {
+    const txt = ps.querySelector('.ps-txt');
+    if (txt) txt.style.display = 'block';
+    t.style.display = 'none';
+    return;
+  }
+  const cl = t.closest('.company-logo');
+  if (cl) {
+    cl.textContent = t.alt || '';
+    return;
+  }
+  t.style.visibility = 'hidden';
+}, true);
+
 window.addEventListener('load', () => {
   setTimeout(() => {
     const l = document.getElementById('loader');
@@ -7,10 +26,9 @@ window.addEventListener('load', () => {
     l.style.pointerEvents = 'none';
     setTimeout(() => l.style.display = 'none', 500);
     triggerReveal();
-  }, 1600);
+  }, 400);
 });
 
-/* ── PAGE SYSTEM ── */
 function showPage(id) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nlink').forEach(l => l.classList.remove('active'));
@@ -21,7 +39,6 @@ function showPage(id) {
   setTimeout(triggerReveal, 80);
 }
 
-/* ── HAMBURGER ── */
 const ham = document.getElementById('ham');
 const mob = document.getElementById('mob');
 if (ham && mob) {
@@ -35,7 +52,6 @@ function closeMob() {
   if (mob) mob.classList.remove('open');
 }
 
-/* ── SCROLL ── */
 const nav = document.getElementById('nav');
 const btt = document.getElementById('btt');
 window.addEventListener('scroll', () => {
@@ -43,7 +59,6 @@ window.addEventListener('scroll', () => {
   if (btt) btt.classList.toggle('vis', window.scrollY > 500);
 });
 
-/* ── REVEAL ── */
 function triggerReveal() {
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
@@ -55,7 +70,6 @@ function triggerReveal() {
 }
 setTimeout(triggerReveal, 200);
 
-/* ── COUNTDOWN ── */
 function tick() {
   const target = document.getElementById('cd-d');
   if (!target) return;
@@ -70,7 +84,6 @@ function tick() {
 tick();
 setInterval(tick, 1000);
 
-/* ── COUNTERS ── */
 function animCtr(el) {
   if (el.dataset.done) return;
   el.dataset.done = '1';
@@ -88,7 +101,6 @@ function animCtr(el) {
 const cObs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) animCtr(e.target); }), { threshold: 0.5 });
 document.querySelectorAll('.ctr').forEach(el => cObs.observe(el));
 
-/* ── PROG TABS ── */
 function switchPtab(btn, id) {
   document.querySelectorAll('.ptab').forEach(b => b.classList.remove('active'));
   document.querySelectorAll('.prog-content').forEach(c => c.classList.remove('active'));
@@ -98,7 +110,6 @@ function switchPtab(btn, id) {
   setTimeout(triggerReveal, 80);
 }
 
-/* ── FORMATION TABS ── */
 function switchFtab(btn, id) {
   document.querySelectorAll('.ftab').forEach(b => b.classList.remove('active'));
   document.querySelectorAll('.ftab-content').forEach(c => c.classList.remove('active'));
@@ -106,8 +117,7 @@ function switchFtab(btn, id) {
   const target = document.getElementById(id);
   if (target) target.classList.add('active');
 }
-
-/* ── FAQ ── */
+// get all attr fq-q 
 document.querySelectorAll('.fq-q').forEach(q => {
   q.addEventListener('click', () => {
     const item = q.parentElement;
@@ -125,10 +135,32 @@ document.querySelectorAll('.fq-q').forEach(q => {
   });
 });
 
-/* ── ÉDITIONS ACCORDION ── */
 function toggleEt(el) { el.classList.toggle('open'); }
 
-/* ── CONTACT FORM ── */
+function loadYt(el, ev) {
+  if (ev) ev.stopPropagation();
+  if (el.classList.contains('loaded')) return;
+  const id = el.getAttribute('data-yt');
+  if (!id) return;
+  el.classList.add('loaded', 'loading');
+  const sp = document.createElement('span');
+  sp.className = 'et-spinner';
+  el.appendChild(sp);
+  const done = () => {
+    el.classList.remove('loading');
+    if (sp.parentNode) sp.remove();
+  };
+  const ifr = document.createElement('iframe');
+  ifr.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+  ifr.title = 'Vidéo Coding Camp';
+  ifr.loading = 'lazy';
+  ifr.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+  ifr.allowFullscreen = true;
+  ifr.addEventListener('load', done);
+  setTimeout(done, 8000);
+  el.appendChild(ifr);
+}
+
 function submitForm() {
   const p = document.getElementById('f-prenom').value;
   const n = document.getElementById('f-nom').value;
@@ -146,7 +178,6 @@ function submitForm() {
   document.getElementById('f-msg').value = '';
 }
 
-/* ── BACK TO TOP ── */
 const bttBtn = document.getElementById('btt');
 if (bttBtn) {
   bttBtn.addEventListener('click', e => {

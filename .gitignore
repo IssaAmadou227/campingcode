@@ -1,0 +1,7 @@
+# Sauvegarde locale des images originales (non optimisées) — ne pas versionner ni déployer
+_originaux_images/
+
+# Build .NET
+[Bb]in/
+[Oo]bj/
+.vs/
