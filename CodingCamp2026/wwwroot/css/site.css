@@ -4985,9 +4985,9 @@ footer {
 
 .insc-camps {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
-    max-width: 840px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1160px;
     margin: 0 auto;
 }
 
@@ -5121,3 +5121,27 @@ footer {
     z-index: 3;
 }
 @keyframes etspin { to { transform: rotate(360deg); } }
+
+.home-camps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1160px;
+    margin: 28px auto 0;
+}
+.home-camp {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+.home-camp .home-camp-visual {
+    flex: none;
+    width: 100%;
+    max-width: none;
+}
+@media (max-width: 720px) {
+    .home-camps {
+        grid-template-columns: 1fr;
+    }
+}
